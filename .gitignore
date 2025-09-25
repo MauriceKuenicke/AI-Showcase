@@ -1,4 +1,4 @@
-*.mp3
+*/out/*.mp3
 .env
 .idea
 *.iml
