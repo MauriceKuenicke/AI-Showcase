@@ -1,0 +1,179 @@
+GlimmerGlass — Internal Sales Brief
+
+Confidential — For Internal Use Only
+Version: 1.0 • Date: 25 Sep 2025
+
+Executive Summary
+
+GlimmerGlass™ is a next-gen protective packaging platform for specialized lab
+equipment (precision pipettes, microfluidic chips, optics, sensors). It combines
+a rigid, glass-clear PETG clamshell with a multilayer barrier liner and anti-static
+coating, engineered for ETO, gamma, and steam sterilization workflows. In pilots,
+customers reduced in-transit damage by 78–85%, cut pack-out time by 24%, and improved
+shelf visibility without sacrificing sterility assurance.
+
+Positioning: Premium, validation-ready packaging that reduces breakage, unboxing time, and shipping mass for high-value lab SKUs.
+Target ASP: €4.20 per unit (volume tiered).
+Gross Margin: 55% at standard volume.
+
+Product Snapshot
+Feature	Detail
+Clear shell	Medical-grade PETG (0.8–1.2 mm), drop-tested to 1.2 m (IK07 equivalent)
+Barrier liner	Co-extruded PE/EVOH/PE; WVTR ≤ 0.05 g/m²/day; OTR ≤ 0.2 cc/m²/day
+Coatings	Permanent anti-static (<10⁹ Ω/sq), scratch-resist topcoat
+Sterilization	Validated for ETO, 25–40 kGy gamma, 121 °C steam (30 min)
+Closure	Dual snap-fit + tamper-evident band; optional RFID/Tamper label
+Cleanliness	ISO 14644-1 Class 7 packaging suite; bioburden control SOP
+Compliance	ISO 11607, ASTM D4169 distribution; facility ISO 13485 & 9001
+Sustainability	Mono-material shell (≥35% PCR available); take-back & grind-reclaim program
+
+Sizes: GG-S (chips, optics), GG-M (pipettes, probes), GG-L (cartridges), custom trays for instrument subassemblies.
+
+Ideal Customer Profiles (ICPs)
+
+Genomics & Diagnostics OEMs (EU/US): high SKU value (€300–€3,000), global distribution, sterility or cleanliness critical.
+
+Optics & Photonics Labs: scratch-sensitive components needing clear inspection at goods-in.
+
+Microfluidics & BioMEMS Startups: frequent design revisions; need custom cavities without long tooling cycles.
+
+Key Triggers: Damage rate >1%, complaints about haze/scratches, long pack-out, sterility rework, packaging change before scale-up.
+
+Value Proposition (Quantified)
+
+Breakage Reduction: From ~1.8% → 0.4% (pilot median).
+
+Pack-Out Time: –24% via snap-fit, pre-sterile liners.
+
+Freight Savings: –8–15% dimensional weight due to thinner walls & nested geometry.
+
+Regulatory Lift: Pre-qualified to ISO 11607 with documented DQ/IQ/OQ templates.
+
+Competitive Landscape (Short)
+
+Rigid PVC clamshells: inexpensive, poor barrier, fogging, limited sterilization.
+
+Foam + carton kits: good cushioning, poor cleanliness, slow pack-out, no visibility.
+
+Tyvek® pouches w/ inserts: great sterility, poor crush resistance, no presentation.
+GlimmerGlass differentiator: combines rigid protection + sterile-barrier liner + clear inspection in one SKU.
+
+Pricing & Packaging
+Tier	Annual Volume	Unit Price (EUR)	Lead Time	Notes
+Launch	5k–24,999	€4.60	3–4 wks	Standard sizes
+Growth	25k–99,999	€4.20	4–6 wks	Forecast lock 8 wks
+Strategic	≥100k	€3.85	6–8 wks	VMI or consignment
+
+MOQs: 2,500 per size; Tooling (custom cavity): €18–35k; Validation support pack: €12k (optional).
+COGS (GG-M example): Materials €1.20 + Labor €0.35 + Overhead €0.25 + QA €0.10 = €1.90 → GM 54.8% at €4.20 ASP.
+
+ROI Example (Use in Discovery Deck)
+
+Customer: Genomics OEM shipping 30,000 chip cartridges/year
+Current: 1.8% breakage × €1,250 unit value = €675,000 loss
+With GlimmerGlass: 0.4% × €1,250 = €150,000 loss
+Damage savings: €525,000
+Packaging delta: (€4.20–€3.00) × 30,000 = €36,000 extra cost
+Freight savings: €0.35 × 30,000 = €10,500
+Net annual impact: €525,000 – €36,000 + €10,500 = €499,500
+One-time enablement (tooling + validation): €120,000 → Payback ≈ 2.9 months
+
+Sales Playbook
+
+Elevator Pitch:
+“GlimmerGlass pairs rigid protection with a sterile barrier and crystal-clear presentation, cutting damage by ~80% and pack-out by ~25%—without changing your sterilization workflow.”
+
+Discovery Questions
+
+What’s your current in-transit damage or return rate by SKU?
+
+Sterilization method & maximum tolerated gamma/steam exposure?
+
+Cleanroom class at packaging? Any bioburden limits?
+
+Average order value and complaint handling cost?
+
+Desired unboxing experience (inspection before opening, tamper evidence, RFID)?
+
+Sustainability targets (PCR %, take-back, EPR)?
+
+Land & Expand Motions
+
+Start with a pilot SKU (highest damage/complaint rate).
+
+Validate with our DQ/IQ/OQ templates; run ASTM D4169 distribution.
+
+Expand to adjacent SKUs; introduce RFID tamper option and VMI.
+
+Objection Handling
+
+“Price premium.” → Quantify damage/freight savings; show 3-month payback.
+
+“Regulatory burden.” → Provide ISO 11607 package validation dossier + sterilization compatibility matrix.
+
+“Sustainability.” → Offer 35% PCR shell + take-back; mono-material aids recycling.
+
+“Supply risk.” → Dual-site EU manufacturing; 12-week buffer in VMI.
+
+Implementation Plan (Customer-Facing)
+
+Week 0–2: Sample selection, fit check, ASTM D638 material certs, sterilization compatibility test strips.
+Week 3–6: Pilot run (2,500–5,000 units), distribution testing (D4169), functional shelf-life accel (6 weeks @ 40 °C/75% RH).
+Week 7–10: Validation report, SOP updates, packaging spec lock.
+Week 11+: Ramp to volume; optional VMI.
+
+Light Case Study (For Credibility)
+
+HelioGenomics (EU)
+
+Problem: 2.1% breakage on microfluidic chips; fogging post-gamma.
+
+Solution: GG-S with anti-fog liner; 28 kGy gamma validated.
+
+Outcome (6 months): Breakage 0.5%, pack-out –21%, NPS at receiving +23 pts, net savings €310k/year.
+
+Product SKUs (Examples)
+SKU	Use Case	Interior Cavity (mm)	Weight	Notes
+GG-S-Optic	Lenses/chips	60×60×8	42 g	Micro-snap & soft posts
+GG-M-Pip	Precision pipettes	245×28×22	78 g	End-cap dampers
+GG-L-Cart	Cartridges	180×120×30	110 g	RFID label well
+
+Marketing & Collateral
+
+PDF sell sheet, ASTM/ISO compliance summary, validation templates, ROI calculator (spreadsheet), unboxing video loop, and sample request form.
+
+Reference pack: drop-test videos, gamma/ETO compatibility chart, sustainability one-pager.
+
+KPIs & Targets (FY25)
+
+Pipeline: 25 qualified logos; €6.5M weighted pipeline
+
+Win Rate: 32% (pilot to conversion)
+
+Cycle Time: 94 → 70 days
+
+Churn: <3% (12-mo)
+
+On-Time Delivery: ≥97.5%
+
+Legal & Compliance Notes
+
+Maintain change-control notice ≥90 days for any resin/coating shift.
+
+Provide Certificates of Conformance (CoC) and Sterilization Compatibility Letters per shipment.
+
+Customer retains final validation responsibility; we supply data packages and templates.
+
+Next Steps for Sales
+
+Identify two SKUs per prospect with damage >1% or complaints >0.5% of shipments.
+
+Offer Pilot Bundle: 2,500 units + validation pack at €24,500 (credit €12k upon scale order ≥25k).
+
+Book packaging engineering consult (no-cost, 60 mins) to scope cavity and sterilization path.
+
+Move to commercial quote with 12-month price protection and optional VMI.
+
+Contacts:
+
+Product: packaging-eng@glimmerglass.example
