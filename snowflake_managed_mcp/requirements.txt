@@ -1,3 +1,4 @@
 alembic
 snowflake-sqlalchemy
 pandas
+crewai-tools[mcp]

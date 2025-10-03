@@ -20,7 +20,7 @@ depends_on: Union[str, Sequence[str], None] = None
 
 def upgrade() -> None:
     op.execute("""
-        CREATE CORTEX SEARCH SERVICE FEATURE_REQUEST_SEARCH
+        CREATE CORTEX SEARCH SERVICE feature_request_search
         ON MESSAGE
         ATTRIBUTES USER_ID, CREATED_AT
         WAREHOUSE = COMPUTE_WH
@@ -34,5 +34,5 @@ def upgrade() -> None:
 
 def downgrade() -> None:
     op.execute("""
-        DROP CORTEX SEARCH SERVICE FEATURE_REQUEST_SEARCH
+        DROP CORTEX SEARCH SERVICE feature_request_search
     """)

@@ -1,0 +1,41 @@
+data_analysis_task:
+  description: >
+    The user has asked the following question: "{message}"
+    
+    Your task is to analyze the user's question and use the tool "Invoke Search Query on MCP" to query
+    the Snowflake-managed database containing user feature requests. The database is specifically 
+    designed to provide insights into feature requests focusing on product improvements, project planning, 
+    and OKR (Objectives and Key Results) alignment.
+    
+    #### Workflow:
+    1. **Analyze the Question**:
+       - Identify the key intent behind the user's query (e.g., categories like UI enhancements, bug fixes, or performance upgrades).
+       - Break down the query into meaningful keywords or filters that can be passed to the MCP tool.
+
+    2. **Leverage the MCP Tool**:
+       - Use the "Invoke Search Query on MCP" tool to retrieve relevant data. The tool allows comprehensive filtering of feature
+         requests based on criteria such as keywords, user-provided categories, and timestamps.
+       - Follow the exact workflow to invoke the tool:
+           ```
+           Thought: I need to use the MCP Analyst tool to query the feature requests database using keywords.
+           Action: Invoke Search Query on MCP
+           Action Input: {{"message": "your key-worded search here"}}
+           ```
+
+    3. **Respond Based on the Tool's Output**:
+       - You MUST use the data retrieved by the tool to construct your answer. Do not provide generalized responses.
+       - Analyze, interpret, and summarize the tool's output to generate meaningful insights.
+       - If you encounter an issue (e.g., no matches were found), notify the user accordingly.
+
+    #### IMPORTANT GUIDELINES:
+    1. Always use the MCP tool to retrieve data before providing your final answer.
+    2. Avoid assumptions or speculations if the tool cannot provide relevant data. Be transparent about limitations.
+    3. Structure your thought process clearly when using tools by following proper Thought → Action → Action Input formatting.
+
+  expected_output: >
+    A professional, actionable, and well-structured response to the user's query, derived 
+    exclusively from the MCP server's feature requests data. Your response should:
+    - Provide meaningful insights derived from the query results (e.g., breakdowns of feature requests by category or priority).
+    - Include categorizations, summaries, or recommendations where applicable.
+    - Highlight relevant examples of feature requests from the data to support your insights.
+    - If possible, offer practical advice for next steps, such as specific actions the product team could take to address the requests.

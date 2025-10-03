@@ -17,6 +17,19 @@ A demonstration project showcasing Snowflake's Managed Model Context Protocol (M
 
 This project demonstrates how to set up and use Snowflake's Managed MCP servers to create secure data agents that can perform intelligent searches over your data using natural language queries. The example includes setting up a feature request search service powered by Snowflake Cortex Search.
 
+### Architecture
+
+```mermaid
+flowchart LR
+    User -->|Question| Agent[CrewaI Agent]
+    Agent -->|Tool Call| MCP[Managed Snowflake MCP Server]
+    MCP -->|Cortex Search| Data[(Feature Requests)]
+    MCP -->|Results| Agent
+    Agent -->|Answer| User
+```
+
+At a high level, the CrewAI agent invokes a tool that calls the Snowflake Managed MCP Server over HTTPS using a Programmatic Access Token (PAT). The MCP server executes a Cortex Search Service over your feature request data and returns results back to the agent.
+
 ## Prerequisites
 
 > **⚠️ IMPORTANT NOTICE**
@@ -34,7 +47,12 @@ This project demonstrates how to set up and use Snowflake's Managed MCP servers 
 ## Setup Instructions
 
 ### Environment variables
-Create a `.env` file copying the `.env.template` example. Fill out the necessary information.
+Create a `.env` file by copying `.env.template` and fill in the following variables:
+
+- `APP__SF__SQL_ALCHEMY_CONN` — SQLAlchemy connection string to your Snowflake account (includes account identifier, database, and schema).
+- `APP__SF__ACCESS_TOKEN` — Programmatic Access Token (PAT) generated in Snowflake UI.
+- `APP__OPENAI_KEY` — OpenAI API key for the example CrewAI agent.
+
 To generate a personal access token (PAT) for Snowflake, head over to the Snowflake UI and into your
 account settings > authentication > programmatic access tokens. Generate a new token:
 
@@ -68,7 +86,7 @@ Once the setup is complete, you can test the Cortex Search functionality directl
 ```sql
 SELECT PARSE_JSON(
   SNOWFLAKE.CORTEX.SEARCH_PREVIEW(
-    'FEATURE_REQUEST_SEARCH',
+    'feature_request_search',
     '{
        "query": "Do we have any requests for improved search speeds in our application?",
        "columns": ["USER_ID", "MESSAGE", "CREATED_AT"],
@@ -84,9 +102,9 @@ SELECT PARSE_JSON(
 
 To verify that the MCP server is properly configured and responsive, run the test script:
 
-```bash
-sh .\query_mcp.sh
-```
+  ```bash
+  sh .\test_mcp.sh
+  ```
 
 ## Expected Output
 
@@ -138,6 +156,24 @@ If everything is configured correctly, you should see output similar to the foll
 When you see this response, it confirms that the MCP server is properly configured and ready to handle requests.
 
 ## Using the MCP Server
+
+### Programmatically
+This repository contains a Python script that demonstrates how to use the MCP server programmatically using the CrewAI
+package.
+
+Run the agent to answer you question using the following command:
+```sh
+python .\run_agent.py
+```
+Make sure to have a OpenAI API key set in the environment variables as this is needed for the agent to work.
+You can use this example question if you like:
+
+`Can you show me examples of user requests looking for new integrations for other services? Summarize the services for me.`
+
+`Did we receive any requests to add a gitHub connection since 01.10.2025?`
+
+![Example Answer](assets/answer.png)
+
 
 ### IntelliJ IDEA
 ![IntelliJ-MCP](assets/intellij.png)

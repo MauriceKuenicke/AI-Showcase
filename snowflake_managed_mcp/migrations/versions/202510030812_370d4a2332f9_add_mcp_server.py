@@ -23,7 +23,7 @@ def upgrade() -> None:
         $$
         tools:
           - name: "Get_Feature_Requests"
-            identifier: "USER_FEATURE_REQUESTS"
+            identifier: "MCP_TESTDB.PUBLIC.feature_request_search"
             type: "CORTEX_SEARCH_SERVICE_QUERY"
             description: "A tool that performs keyword and vector search over user feature requests for our application."
             title: "Feature Requests"
