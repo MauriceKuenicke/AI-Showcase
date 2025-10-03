@@ -1,6 +1,6 @@
 # AI Showcase
 
-A tiny, clean landing page that highlights a handful of small AI experiments living in this repository. The site is auto‑deployed to GitHub Pages and links directly to each project folder.
+A tiny, project that highlights a handful of small AI experiments living in this repository. The site is auto‑deployed to GitHub Pages and links directly to each project folder.
 
 
 ## What’s inside
