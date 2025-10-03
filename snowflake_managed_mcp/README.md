@@ -21,7 +21,8 @@ This project demonstrates how to set up and use Snowflake's Managed MCP servers 
 
 > **⚠️ IMPORTANT NOTICE**
 > 
-> This example assumes that the user has `ACCOUNTADMIN` privileges to create the necessary services and network policies. **Running the SQL migrations will alter the NETWORK POLICY at the account level!**
+> This example assumes that the user has `ACCOUNTADMIN` privileges to create the necessary services and network policies. 
+> **Running the SQL migrations will alter the NETWORK POLICY at the account level to allow access from all IP addresses!**
 > 
 > Please ensure you understand the implications before proceeding in a production environment.
 
@@ -135,3 +136,47 @@ If everything is configured correctly, you should see output similar to the foll
 ```
 
 When you see this response, it confirms that the MCP server is properly configured and ready to handle requests.
+
+## Using the MCP Server
+
+### IntelliJ IDEA
+![IntelliJ-MCP](assets/intellij.png)
+Add the following configuration
+```json
+{
+  "mcpServers": {
+    "snowflake": {
+      "command": "C:\\Program Files\\nodejs\\npx.cmd",
+      "args": [
+        "-y",
+        "mcp-remote@latest",
+        "https://<ACCOUNT-IDENTIFIER>.snowflakecomputing.com/api/v2/databases/<DATABASE>/schemas/<SCHEMA>/mcp-servers/MCP_SERVER",
+        "--header",
+        "Authorization: Bearer <SNOWFLAKE_PAT>"
+      ]
+    }
+  }
+}
+```
+Sadly, Snowflake only provides a protocol version which is not supported by mcp-remote and also 
+doesn't do any version negotiations yet.
+
+### ChatGPT
+Don't bother for now if you want to keep your sanity.
+
+### Claude
+Needs a paid version.
+
+### Cursor
+```json
+{
+    "mcpServers": {
+      "snowflake": {
+        "url": "https://<ACCOUNT-IDENTIFIER>.snowflakecomputing.com/api/v2/databases/<DATABASE>/schemas/<SCHEMA>/mcp-servers/MCP_SERVER",
+            "headers": {
+              "Authorization": "Bearer <SNOWFLAKE_PAT>"
+            }
+      }
+    }
+}
+```

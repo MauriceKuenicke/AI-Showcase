@@ -23,7 +23,7 @@ def upgrade() -> None:
     create or replace mcp server MCP_SERVER from specification
         $$
         tools:
-          - name: "User Feature Request Search Service"
+          - name: "Get_Feature_Requests"
             identifier: "USER_FEATURE_REQUESTS"
             type: "CORTEX_SEARCH_SERVICE_QUERY"
             description: "A tool that performs keyword and vector search over user feature requests for our application."
