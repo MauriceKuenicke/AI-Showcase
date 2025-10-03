@@ -21,7 +21,7 @@ This project demonstrates how to set up and use Snowflake's Managed MCP servers 
 
 ```mermaid
 flowchart LR
-    User -->|Question| Agent[CrewaI Agent]
+    User -->|Question| Agent[CrewAI Agent]
     Agent -->|Tool Call| MCP[Managed Snowflake MCP Server]
     MCP -->|Cortex Search| Data[(Feature Requests)]
     MCP -->|Results| Agent
